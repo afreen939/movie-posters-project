@@ -1,0 +1,47 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.poster-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.poster {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.poster-card:hover .poster {
+    transform: scale(1.05);
+}
+
+.poster-card h2,
+.poster-card p {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
